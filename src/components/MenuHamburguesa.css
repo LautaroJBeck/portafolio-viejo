@@ -1,0 +1,68 @@
+.contenedor-hamburguesa{
+    position:fixed;
+    bottom:1vh;
+    right:1vw;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.panel-btn{
+    background-color: black;
+    z-index: 99999999999999999999999999999999;
+    height:4rem;
+    width:4rem;
+    border-radius: 50%;
+    display:flex;
+    padding:0;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 1px 6px 1px rgb(84 84 84);
+    position:absolute;
+    bottom:0;
+    right:0;
+    cursor:auto;
+
+}
+.aparecer-boton{
+    opacity: 1;
+
+}
+.hamburger{
+    background-color: #fff;
+}
+.links-container{
+    display:flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-bottom: 3.5rem;
+    opacity:0.85;
+    border-radius: 1rem;
+    visibility: hidden;
+    transform:scaleX(0);
+    transition:all .1s;
+}
+.link-inicio{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.link-final{
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.links-container a{
+    text-decoration: none;
+    text-align: center;
+    padding:1rem;
+    color:black;
+    font-weight: 900;
+}
+.links-container a:hover{
+    background-color: #d1cbcb;
+}
+
+.menu-visible{
+    visibility: visible;
+    transform: scaleX(1);
+}
+.cursor-pointer{
+    cursor:pointer;
+}

@@ -1,0 +1,62 @@
+/*Viewport*/
+.article-container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+/*Sobre mi*/
+.text-container{
+    width:60%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition:.5s all ease
+}
+
+.text-container h2{
+    font-size: 3rem;
+    color:black;
+    text-align: center;
+    margin-bottom:2rem;
+}
+.text-container p{
+    font-size: 1.25rem;
+}
+
+
+
+
+/*Keyframes*/ 
+
+.identifier{
+    animation:1s identifier ease
+}
+.desaparecer{
+    opacity:0;
+}
+@keyframes identifier {
+    0%{
+        opacity: 0;
+        transform: translateY(7.5rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Media Queries*/
+
+@media screen and (max-width:400px){
+    .text-container h2{
+        font-size: 2rem;
+
+    }
+    .text-container p{
+        font-size: 1rem;
+    }
+}
